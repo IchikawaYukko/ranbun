@@ -111,3 +111,21 @@ Between Pin 1-2 is shorted when drawer is closed.
 12Vでもソレノイド駆動可
 
 It can be open by 12V drive.
+
+## NEC
+### Express5800 デバイス増設ユニット N8141-48 - Device extension unit N8141-48
+CN1 Power connector
+```
+1 IN  PWR_OK
+2 OUT PS_ON#
+3 IN  +5V
+4 IN  +12V
+5     GND
+6     GND
+
+# -> Active Low
+```
+
+ATX 電源で純正電源ユニットを置き換える際の参考に・・・（純正電源壊れた人）
+
+Please refer this when you replace original power unit by ATX power unit.
