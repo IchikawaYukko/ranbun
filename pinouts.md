@@ -3,9 +3,9 @@
 
 Pinouts informations
 
-☜[Cables.md](Cables.md) も見よ
+☜[cables.md](cables.md) も見よ
 
-See also:[Cables.md](Cables.md)
+See also:[cables.md](cables.md)
 
 ```
 ※RJ-11
@@ -65,6 +65,31 @@ RJ-11 Plug
 4-- TxD
 5-- ??
 6-- ??
+```
+
+### TelePresence EX90 Power
+```
+Power DIN 4pin
+12V 12.5A
++   +
+ - -
+```
+AC Adaptor: Model 12125
+
+You can get Power DIN 4pin in Akihabara, Sengoku Densho shop.
+[ロック式パワーDIN4Pプラグ](https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=6AFK-RGE2)
+### TelePresence EX90 Console
+```
+RJ-45 TTL Level
+
+1-- GND
+2-- RxD
+3--
+4--
+5--
+6--
+7-- TxD
+8-- Vcc 5V??
 ```
 
 ### Cisco UCS M240M3 GPU_PWR Port (Motherboard)
