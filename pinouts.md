@@ -137,6 +137,23 @@ Between Pin 1-2 is shorted when drawer is closed.
 
 It can be open by 12V drive.
 
+## TERAOKA
+### Cash Drawer Unkown Model Number
+```
+RJ-11
+
+1-- Frame GND
+2-- Solenoid+
+3-- OPEN DETECT-
+4-- Solenoid-
+5-- Frame GND
+6-- OPEN DETECT+
+```
+
+Between Pin 1-4 is shorted when drawer is closed.
+
+Drawer can be opened manually by bottom lever.
+
 ## NEC
 ### Express5800 デバイス増設ユニット N8141-48 - Device extension unit N8141-48
 CN1 Power connector
