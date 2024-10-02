@@ -8,4 +8,5 @@
 * [ピンアウト　Pinouts](pinouts.md)
 * [ケーブル＆ハーネス　Cables and Harness](cables.md)
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
+* [オススメ自宅用ラックサーバマシン](recomanded_homeservers.md)
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
