@@ -171,3 +171,18 @@ CN1 Power connector
 ATX 電源で純正電源ユニットを置き換える際の参考に・・・（純正電源壊れた人）
 
 Please refer this when you replace original power unit by ATX power unit.
+
+## Tokyo HY-POWER
+# HT-100 シリーズ　HT-100 Series (HT-115 etc...)
+ACC Connector (5pin DIN)
+
+Left to Right PIN No.: 3 5 2 4 1
+```
+3 OUT  13.8V (500mA MAX)
+5 IN  ALC
+2     GND
+4 OUT  HIGH LEVEL (+8V) when Receive
+1 OUT  HIGH LEVEL (+8V) when Send
+
+# -> Active Low
+```
