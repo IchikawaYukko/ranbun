@@ -10,4 +10,5 @@
 * [ケーブル＆ハーネス　Cables and Harness](cables.md)
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
 * [オススメ自宅用ラックサーバマシン](recomanded_homeservers.md)
+* [古いCiscoるうたあをコンソールサーバとして使うっ](cisco_router_as_console_server.md)
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
