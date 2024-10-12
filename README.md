@@ -5,6 +5,7 @@
 
 個人サイトの MediaWiki が壊れたので、とりま技術情報や乱文は、ココに書いておくこととする・・・（ぉ
 
+* [さまざまな高地](hills_on_battlefield.md)
 * [ピンアウト　Pinouts](pinouts.md)
 * [ケーブル＆ハーネス　Cables and Harness](cables.md)
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
