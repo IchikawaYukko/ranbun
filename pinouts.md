@@ -186,3 +186,16 @@ Left to Right PIN No.: 3 5 2 4 1
 
 # -> Active Low
 ```
+
+## KENWOOD
+### 8pin Microphone (MC-80, MC-43 etc...)
+```
+1 MIC+
+2 PTT
+3 DOWN
+4 UP
+5 +5V (25mA MAX)
+6 NC (or Detector OUT ???)
+7 MIC-
+8 GND
+```
