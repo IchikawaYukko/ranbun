@@ -82,14 +82,16 @@ You can get Power DIN 4pin in Akihabara, Sengoku Densho shop.
 ```
 RJ-45 TTL Level
 
-1-- GND
-2-- RxD
+38400bps
+8N1 Flow:none
+1-- Vcc 3.3V
+2-- TxD (EX90 -> PC)
 3--
 4--
 5--
 6--
-7-- TxD
-8-- Vcc 5V??
+7-- RxD (EX90 <- PC)
+8-- GND
 ```
 
 ### Cisco UCS M240M3 GPU_PWR Port (Motherboard)
