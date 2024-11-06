@@ -67,6 +67,21 @@ RJ-11 Plug
 6-- ??
 ```
 
+### UC Phone 7921G Battery
+```
+<-LEFT       RIGHT->
+1 2 3 4 5 (+)<-Screw
+
+1-- BAT+?? 3.7V
+2-- R1
+3-- R2
+4-- NC??
+5-- GND??
+
+GND - R1: 50k??
+GND - R1: 80k??
+```
+
 ### TelePresence EX90 Power
 ```
 Power DIN 4pin
