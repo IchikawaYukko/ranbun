@@ -216,3 +216,18 @@ Left to Right PIN No.: 3 5 2 4 1
 7 MIC-
 8 GND
 ```
+
+## Server PWM Fans
+### DELTA PFR0912XHE
+12V 4.50A 8pin fan
+```
+  KEY
+R R Y O   2.54mm pitch
+? B G G
+
+R: +12V (RED)
+G: GND  (BLACK)
+B: PWM CONTROL INPUT (BLUE)
+Y: (YELLOW)
+O: (ORANGE)
+```
