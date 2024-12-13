@@ -9,6 +9,15 @@
    凸
 12345678
 ```
+
+# Network Fibre Cable 光ファイバーケーブル
+Right hand traffic 右側通行（上から見て）
+```
+SFP         SFP
+RX <------- TX
+TX -------> RX
+```
+100BASE-FX, 1000BASE-SX, LX etc... (Both of SC, LC connector)
 ## Cisco
 ### Cisco IP Phone Console Cable
 ```
