@@ -95,3 +95,8 @@
 * IRM UPSCALE ALARM　中間領域モニタ高
 * CONTROL ROD WITHDRAWL BLOCK　制御棒引抜ブロック（インターロック）
 
+# 他の原子炉シミュレーター
+
+[PCTRAN - Micro-simulation Technology](http://www.microsimtech.com/pctran/)
+
+各形の原子炉シミュレーターあり。最初の5分は無料ライセンスで遊べる。
