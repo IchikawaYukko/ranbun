@@ -218,7 +218,8 @@ Left to Right PIN No.: 3 5 2 4 1
 ```
 
 ## Server PWM Fans
-### DELTA PFR0912XHE
+### DELTA
+#### DELTA PFR0912XHE
 12V 4.50A 8pin fan
 ```
   KEY
@@ -230,4 +231,22 @@ G: GND  (BLACK)
 B: PWM CONTROL INPUT (BLUE)
 Y: (YELLOW)
 O: (ORANGE)
+```
+
+#### DELTA BFB1212VH
+12V 1.88A
+```
+KEY  G B  KEY
+     - +
+
+G ??? (Green)
+B ??? (Black)
++ 12V+
+- GND
+
+Plug: Molex 5557-04
+Jack: Molex 5559-04
+
+5557プラグのノッチは要カット。（カットしないと入らない）
+You must cut locking notch on 5557 plug to insert.
 ```
