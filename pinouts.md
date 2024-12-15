@@ -39,11 +39,16 @@ RJ-45
 
 RTN is GND
 ROF is Remote On/ofF (PS_ON as ATX)
+
+Plug: Molex 5557-08
+Jack: Molex 5559-08
 ```
 
 +5Vのみでブート自体は可能
 
 It can be booted on only +5V
+
+AC Adaptor: ADP-29DB (29W)
 
 ### IP Phone Handset
 ```
@@ -114,6 +119,9 @@ RJ-45 TTL Level
 +12V  +12V  +12V  GND
  GND   GND   GND  GND
           KEY
+
+Plug: Molex 5557-08
+Jack: Molex 5559-08
 ```
 
 ## NTT
