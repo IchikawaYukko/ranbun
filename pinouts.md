@@ -247,13 +247,16 @@ O: (ORANGE)
 KEY  G B  KEY
      - +
 
-G ??? (Green)
-B ??? (Black)
+G LED + (Green)
+B LED - (Black)
 + 12V+
 - GND
 
 Plug: Molex 5557-04
 Jack: Molex 5559-04
+
+DO NOT Directory Connect 5V or 12V to LED. It may burn! So, current limiting diode is required.
+LED に5V, 12Vを直接繋がないこと。要電流制限ダイオード。
 
 5557プラグのノッチは要カット。（カットしないと入らない）
 You must cut locking notch on 5557 plug to insert.
