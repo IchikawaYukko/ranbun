@@ -15,3 +15,5 @@
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
 * [初代さーひすスタジオ Tips](SurfaceStudio.md)
+
+乱文乱筆、誤字脱字、大変ご容赦っっっ🙇🏻‍♀️

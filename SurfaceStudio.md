@@ -1,5 +1,5 @@
 # 初代さーひすスタジオ Tips
-2022年に初段 Surface Studio を入手してしばらく使っているが、日本語の技術情報があまり落ちていないので、気が向いた時にちょこちょこ書くとする。Surface Studio 2, 2+ もほぼ同様のマシンなので、2の場合でも参考になるはず。
+2022年に初代 Surface Studio を入手してしばらく使っているが、日本語の技術情報があまり落ちていないので、気が向いた時にちょこちょこ書くとする。Surface Studio 2, 2+ もほぼ同様のマシンなので、2の場合でも参考になるはず。
 
 # スペックについて
 意外とゲームができる！まぁ最新ゲームは無理なものの、2015年までに発売されたゲームは、ほぼ動くとみていい。
@@ -42,7 +42,7 @@
 * ArmA 3
 * Euro Truck Simulator 2
 * American Truck Simulator
-* Call of Duty 4　　最高画質でプレイ化。まぁ2007年のゲームだしね。
+* Call of Duty 4　　最高画質でプレイ可。まぁ2007年のゲームだしね。
 * Metal Gear Solid V Ground Zeros
 * Kerbal Space Program
 * The Long Dark
