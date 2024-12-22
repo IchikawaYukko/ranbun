@@ -14,3 +14,4 @@
 * [古いCiscoるうたあをコンソールサーバとして使うっ](cisco_router_as_console_server.md)
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
+* [初代さーひすスタジオ Tips](SurfaceStudio.md)
