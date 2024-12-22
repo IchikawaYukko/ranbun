@@ -3,7 +3,7 @@
 
 👩🏻‍💻Yuriko's mysterious technical notes
 
-個人サイトの MediaWiki が壊れたので、とりま技術情報や乱文は、ココに書いておくこととする・・・（ぉ
+[個人サイトの MediaWiki](https://yuriko.co.nz/w/) が壊れたので、とりま技術情報や乱文は、ココに書いておくこととする・・・（ぉ
 
 * [さまざまな高地](hills_on_battlefield.md)
 * [ピンアウト　Pinouts](pinouts.md)
