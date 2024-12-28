@@ -1,4 +1,4 @@
-# Cisco router's max memory size information
+# Cisco router's max flash memory size information
 
 ## Cisco 1600
 16MB PCMCIA Linear Flash
@@ -19,6 +19,18 @@ CallManagerExpress#sh fla
 1     36805116 Dec 27 2024 11:24:12 +09:00 c2800nm-advipservicesk9-mz.124-10a.bin
 
 2042068992 bytes available (36831232 bytes used)
+```
+
+## Cisco 2900 (2901)
+4GB?? CF (FAT16)
+
+16GB CF can be formatted by `format` command. but after the format, cannot mount.
+```
+Cisco2901K9#sh flash0:
+-#- --length-- -----date/time------ path
+1     74503236 Dec 29 2024 01:39:04 +09:00 c2900-universalk9-mz.SPA.151-4.M4.bin
+
+4035117056 bytes available (74514432 bytes used)
 ```
 
 ## Cisco 3600 (3620 / 3640 / 3660)
