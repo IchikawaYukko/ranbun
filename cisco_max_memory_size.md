@@ -22,15 +22,15 @@ CallManagerExpress#sh fla
 ```
 
 ## Cisco 2900 (2901)
-4GB?? CF (FAT16)
+8GB CF (FAT16)
 
 16GB CF can be formatted by `format` command. but after the format, cannot mount.
 ```
-Cisco2901K9#sh flash0:
+Cisco2901K9>sh flash0:
 -#- --length-- -----date/time------ path
-1     74503236 Dec 29 2024 01:39:04 +09:00 c2900-universalk9-mz.SPA.151-4.M4.bin
+1     74503236 Dec 30 2024 00:01:42 +09:00 c2900-universalk9-mz.SPA.151-4.M4.bin
 
-4035117056 bytes available (74514432 bytes used)
+7926255616 bytes available (74444800 bytes used)
 ```
 
 ## Cisco 3600 (3620 / 3640 / 3660)
