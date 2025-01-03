@@ -1,5 +1,9 @@
 # Cisco router's max flash memory size information
 
+## Cisco 1000 (1003)
+ROM: 2MB?? PCMCIA Linear Flash
+RAM: 16MB?? 72pin SIMM (256kbit x 8)
+
 ## Cisco 1600
 16MB PCMCIA Linear Flash
 
