@@ -2,10 +2,13 @@
 
 ## Cisco 1000 (1003)
 ROM: 2MB?? PCMCIA Linear Flash
-RAM: 16MB?? 72pin SIMM (256kbit x 8)
+
+RAM: 16MB?? 72pin SIMM DRAM (256kbit x 8)
 
 ## Cisco 1600
-16MB PCMCIA Linear Flash
+ROM: 16MB PCMCIA Linear Flash
+
+RAM: 16MB?? 72pin SIMM DRAM
 
 ## Cisco 2800 (2811)
 2GB CF (FAT16)
