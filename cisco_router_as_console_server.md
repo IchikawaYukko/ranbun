@@ -21,7 +21,16 @@ line aux 0
  transport input telnet
  transport output telnet
  speed 115200　　←　ボーレートはこのコマンドで変更可能っ☆
+ session-timeout 30　　←　ゾンビセッション自動切断(30分)
 ```
+
+※30分何も入力がないときにセッションを切断する　(出力はチェックしない)
+
+`session-timeout 30`
+
+※30分何も入出力がないときにセッションを切断する　(出力もチェックする)
+
+`session-timeout 30 output`
 
 ### 接続
 AUXポートと別マシンのコンソールポートは市販のCiscoコンソールケーブル(DB9-RJ45)で繋げばよろし♪　相手もRJ-45ポートな場合は(RJ45-RJ45)なロールオーバーケーブルを使おお！！
@@ -59,6 +68,13 @@ Cisco1721#show line
 Line(s) not in async mode -or- with no hardware support:
 1-4
 ```
+### kick の仕方
+誰かがコンソールサーバのセッションを掴んだままでアクセスできない時は
+
+`clear line aux 0`
+
+すればOK!!
+
 ## ロールオーバーケーブルの作り方
 ストレートケーブルやクロスケーブルでは代用できないので、ちうい！ロールオーバーケーブル持ってない？作ろうっ！
 
