@@ -16,6 +16,7 @@
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
 * [初代さーひすスタジオ Tips](SurfaceStudio.md)
 * [VOR/DME 局への行き方 How to get to VOR/DME stations](Reachng_LORAN_VOR_Stations.md)
+* [IPv6 Tips](IPv6.md)
 
 日英混在、乱文乱筆、誤字脱字、大変ご容赦っっっ🙇🏻‍♀️
 

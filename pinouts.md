@@ -261,3 +261,14 @@ LED に5V, 12Vを直接繋がないこと。要電流制限ダイオード。
 5557プラグのノッチは要カット。（カットしないと入らない）
 You must cut locking notch on 5557 plug to insert.
 ```
+
+### inmarsat
+#### IsatPhonePro
+```
+Li-ion Battery Connector Left-to-Right
+
++3.7  ?  GND
+
+It is okay ? pin open to boot the phone.
+(or pull up?)
+```
