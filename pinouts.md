@@ -77,14 +77,13 @@ RJ-11 Plug
 <-LEFT       RIGHT->
 1 2 3 4 5 (+)<-Screw
 
-1-- BAT+?? 3.7V
+1-- ??
 2-- R1
-3-- R2
-4-- NC??
-5-- GND??
+3-- GND
+4-- ??
+5-- BAT+ 3.7V
 
-GND - R1: 50k??
-GND - R1: 80k??
+GND - R1: 10k
 ```
 
 ### TelePresence EX90 Power
