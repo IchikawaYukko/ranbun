@@ -39,6 +39,19 @@ Cable        Port
 
 See also: https://www.cisco.com/c/ja_jp/support/docs/collaboration-endpoints/unified-ip-phone-7900-series/212061-How-To-Make-A-Cisco-IP-Phone-Console-Cab.html
 
+## Cisco / HP
+### Cisco Console Cable to PA-RISC rp3440 Console Port Converter
+| Cisco Rollover(RJ-45 Jack) | Signal | DB-25 |
+|----------------------------|--------|-------|
+| 8                          | RTS    |    5  |
+| 7 Blue                     | DSR    |    8  |
+| 6 yellow                   | TXD    |    3  |
+| 5 green                    | GND    |    7  |
+| 4 red                      | GND    |    7  |
+| 3 black                    | RXD    |    2  |
+| 2 white                    | DTR    |    20 |
+| 1                          | CTS    |    4  |
+
 ## SAS
 カオスなSASコネクタまとめ（速度は1レーン当たり）
 

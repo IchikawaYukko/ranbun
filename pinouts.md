@@ -224,6 +224,29 @@ Left to Right PIN No.: 3 5 2 4 1
 8 GND
 ```
 
+## HP
+### PA-RISC rp3440 25pin Console Port
+| Signal | DB-25 |
+|--------|-------|
+| RXD    |    2  |
+| TXD    |    3  |
+| CTS    |    4  |
+| RTS    |    5  |
+| GND    |    7  |
+| DSR    |    8  |
+| DTR    |    20 |
+
+### inmarsat
+#### IsatPhonePro
+```
+Li-ion Battery Connector Left-to-Right
+
++3.7  ?  GND
+
+It is okay ? pin open to boot the phone.
+(or pull up?)
+```
+
 ## Server PWM Fans
 ### DELTA
 #### DELTA PFR0912XHE
@@ -259,15 +282,4 @@ LED に5V, 12Vを直接繋がないこと。要電流制限ダイオード。
 
 5557プラグのノッチは要カット。（カットしないと入らない）
 You must cut locking notch on 5557 plug to insert.
-```
-
-### inmarsat
-#### IsatPhonePro
-```
-Li-ion Battery Connector Left-to-Right
-
-+3.7  ?  GND
-
-It is okay ? pin open to boot the phone.
-(or pull up?)
 ```
