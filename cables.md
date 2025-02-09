@@ -18,8 +18,8 @@ RX <------- TX
 TX -------> RX
 ```
 100BASE-FX, 1000BASE-SX, LX etc... (Both of SC, LC connector)
-## Cisco
-### Cisco IP Phone Console Cable
+# Cisco
+## Cisco IP Phone Console Cable
 ```
 RJ-45        RJ-11
 Cisco        IP Phone
@@ -44,6 +44,8 @@ See also: https://www.cisco.com/c/ja_jp/support/docs/collaboration-endpoints/uni
 
 Straight LAN cable can be used as ___Reverse___ roll over cable!!!
 
+# Cisco / HP
+## Cisco Console Cable to PA-RISC rp3440 Console Port Converter
 | Cisco Rollover(RJ-45 Jack) | Signal | DB-25 |
 |----------------------------|--------|-------|
 | 8                          | RTS    |    5  |
@@ -55,30 +57,30 @@ Straight LAN cable can be used as ___Reverse___ roll over cable!!!
 | 2 white                    | DTR    |    20 |
 | 1                          | CTS    |    4  |
 
-## SAS
+# SAS
 カオスなSASコネクタまとめ（速度は1レーン当たり）
 
 Chaotic SAS Connecters Outline
 
-### SATA PHY1レーン
+## SATA PHY1レーン
 SFF-8448（一般的なSATAコネクタ）
 
-### SAS 3～12Gb/s PHY1レーン
+## SAS 3～12Gb/s PHY1レーン
 SFF-8482（ドライブ用、電源ピン付き）
 
-### SAS 3Gb/s PHY4レーン
+## SAS 3Gb/s PHY4レーン
 SFF-8470（外部用、機器間用、InfiniBand 4Xコネクタと同じ）
 SFF-8484（内部用、HBA用）
 ちうこ品でも見なくなりつつある規格
 
-### miniSAS 6Gb/s PHY4レーン
+## miniSAS 6Gb/s PHY4レーン
 SFF-8088（外部用、機器間用）
 SFF-8087（内部用、HBA用）
 
-### miniSAS HD 12Gb/s PHY4レーン
+## miniSAS HD 12Gb/s PHY4レーン
 SFF-8644（外部用、機器間用）
 SFF-8643（内部用、HBA用）
 
-### QSFP+ 10Gb/s PHY4レーン
+## QSFP+ 10Gb/s PHY4レーン
 SFF-8436（外部用、機器間用、InfiniBand QDRコネクタと同じ）
 Fujitsu ETERNUS S2のエンクロージャ間コネクタがコレ。S3からは8644になった。
