@@ -39,8 +39,11 @@ Cable        Port
 
 See also: https://www.cisco.com/c/ja_jp/support/docs/collaboration-endpoints/unified-ip-phone-7900-series/212061-How-To-Make-A-Cisco-IP-Phone-Console-Cab.html
 
-## Cisco / HP
-### Cisco Console Cable to PA-RISC rp3440 Console Port Converter
+## Reverse Rollover Cable
+ストレートLANケーブルは ___リバース___ ロールオーバーケーブルとして使える!!!（ぉ
+
+Straight LAN cable can be used as ___Reverse___ roll over cable!!!
+
 | Cisco Rollover(RJ-45 Jack) | Signal | DB-25 |
 |----------------------------|--------|-------|
 | 8                          | RTS    |    5  |
