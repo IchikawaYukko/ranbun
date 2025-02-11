@@ -226,8 +226,26 @@ interface Dialer1
 
 * `dialer-list 1 protocol ip permit`　ダイアラーリスト1番を定義。IPプロトコルが飛んで来たら Dialer1 インターフェースでPPP認証を開始する（オンデマンドダイアル）
 
-## デバッグ
+## トラシュー
+### changed state to up, changed state to down が繰り返し出る時
+```
+%DIALER-6-BIND: Interface Vi1 bound to profile Di1
+%LINK-3-UPDOWN: Interface Virtual-Access1, changed state to up
+%DIALER-6-UNBIND: Interface Vi1 unbound from profile Di1
+%LINK-3-UPDOWN: Interface Virtual-Access1, changed state to down
+```
+認証方式の不一致、PPPoEユーザー名、パスワードの誤りのいずれか
+
+### デバッグ
 `debug vdsl 0 daemon interface` で接続の進行状況が見える
 
 * VDSL 0: vdsl line state : discovery
 VDSL信号を検出中・・・
+
+### 各種確認コマンド
+`show pppoe session`
+
+`show controllers VDSL 0`
+
+### Cisco るうたあで telnet 設定を入れても telnet 接続できない時～
+`show run` で line vty に transport input none が入っていないか確認して `transport input telnet` しましょう☆
