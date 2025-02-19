@@ -19,6 +19,8 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [初代さーひすスタジオ Tips](SurfaceStudio.md)
 * [VOR/DME 局への行き方 How to get to VOR/DME stations](Reachng_LORAN_VOR_Stations.md)
 * [IPv6 Tips](IPv6.md)
+* [税制改正にともなう株式電卓 CASIO KB-100 の対応](CASIO_KB-100.md)
+
 # Cisco
 * [Cisco 867VAE るうたあで VDSL2 接続っっっっ](Cisco867VAE_Connect_VDSL.md)
 * [古いCiscoるうたあをコンソールサーバとして使うっ](cisco_router_as_console_server.md)
