@@ -21,6 +21,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [IPv6 Tips](IPv6.md)
 * [税制改正にともなう株式電卓 CASIO KB-100 の対応](CASIO_KB-100.md)
 * [電子工作Tips](Hobby_electronics_tips.md)
+* [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
 
 # Cisco
 * [Cisco 867VAE るうたあで VDSL2 接続っっっっ](Cisco867VAE_Connect_VDSL.md)
