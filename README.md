@@ -28,3 +28,4 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [古いCiscoるうたあをコンソールサーバとして使うっ](cisco_router_as_console_server.md)
 * [Ciscoるうたあの最大メモリサイズ一覧表 Cisco router's max flash memory size information](cisco_max_memory_size.md)
 * [古いCisco IOSのフューチャーセット命名規則 Old Cisco IOS feature set naming rule](CiscoIOS_old_naming_rule.md)
+* [Cisco Tips](Cisco_tips.md)
