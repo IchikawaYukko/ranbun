@@ -22,7 +22,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [税制改正にともなう株式電卓 CASIO KB-100 の対応](CASIO_KB-100.md)
 * [電子工作Tips](Hobby_electronics_tips.md)
 * [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
-* [ゆりこネット提供サービス一覧☆](YurikoNET.md)
+* [ゆりこねっと提供サービス一覧☆](YurikoNET.md)
 * [LTO Tips](LTO.md)
 
 # Cisco
