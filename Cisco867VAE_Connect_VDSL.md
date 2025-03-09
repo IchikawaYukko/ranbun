@@ -1,3 +1,6 @@
+百合子設計局  
+報告書番号 004
+
 # Cisco 867VAE るうたあで VDSL2 接続っっっっ
 Cisco 867VAEるうたあで VDSL2 接続に成功したので、とりま情報をまとめておくっ！意外と日本語の情報がない・・・👩🏻‍💻💦　ADSLモデム機能も付いているので `operating mode adsl2` すればADSL接続もできそお！（今時ADSL使ってるゃっ居るのか・・・？🤔）
 
@@ -73,9 +76,11 @@ interface ATM0
  no atm ilmi-keepalive
 !
 interface Ethernet0
+ description xDSL modem L2 virtual interface
  no ip address
- ip tcp adjust-mss 1414
+ no cdp enable
  pppoe-client dial-pool-number 1
+ no lldp transmit
 !
 interface FastEthernet0
  no ip address
@@ -104,13 +109,16 @@ interface Vlan1
  ipv6 address autoconfig
 !
 interface Dialer1
+ description xDSL modem L3 virtual interface
  ip address negotiated
+ ip mtu 1454
  ip nat outside
  ip virtual-reassembly in
  encapsulation ppp
- ip tcp adjust-mss 1440
+ ip tcp adjust-mss 1414
  dialer pool 1
  dialer-group 1
+ no cdp enable
  ppp authentication pap chap ms-chap ms-chap-v2 callin
  ppp chap hostname 👩🏻‍✈️@ma00.bbisp.net
  ppp chap password 0 🛂
@@ -158,6 +166,7 @@ xDSLモデムのレイヤ1設定
 ```
 controller VDSL 0
  operating mode vdsl2
+ description xDSL L1 interface
 ```
 `operating mode vdsl2`　xDSLモデムの動作モードを VDSL 2 にする
 
@@ -177,27 +186,34 @@ Router(config-controller)#operating mode ?
 xDSLモデムの外向き仮想インターフェース。
 ```
 interface Ethernet0
+ description xDSL modem L2 virtual interface
  no ip address
- ip tcp adjust-mss 1414
+ no cdp enable
  pppoe-client dial-pool-number 1
+ no lldp transmit
 ```
 
 `no ip address`　WAN IP アドレスは Dialer1 インターフェースに割り当てるので、Ethernet0には振らない。
 
 `pppoe-client dial-pool-number 1`　`dialer pool 1`とEthernet0 インターフェースを紐付け（Dialer1と紐付け）
 
+`no cdp enable` `no lldp transmit` WAN宛にCDPとLLDPの広告をしない
+
 * `interface Dialer1`
 
 PPPoE認証を行う仮想インターフェース
 ```
 interface Dialer1
+ description xDSL modem L3 virtual interface
  ip address negotiated
+ ip mtu 1454
  ip nat outside
  ip virtual-reassembly in
  encapsulation ppp
- ip tcp adjust-mss 1440
+ ip tcp adjust-mss 1414
  dialer pool 1
  dialer-group 1
+ no cdp enable
  ppp authentication pap chap ms-chap ms-chap-v2 callin
  ppp chap hostname 👩🏻‍✈️@ma00.bbisp.net
  ppp chap password 0 🛂
@@ -210,9 +226,15 @@ interface Dialer1
 
 `encapsulation ppp`　PPPでカプセル化（他にSLIP, Frame-relay か選べる）
 
+`ip mtu 1454`　要調整 （フレッツ光の場合は1454）
+
+`ip tcp adjust-mss 1414`　要調整（1454 - 40 = 1414）
+
 `dialer pool 1`　ダイアラープール1番とする。Ethernet0インターフェースからPPPo __E__ 認証パケットを投げる。（int Ethernet0 の `dialer pool 1`と対応）
 
 `dialer-group 1`　ダイアラーリスト1番と紐付け（認証開始トリガを指定）
+
+`no cdp enable` WAN宛にCDPの広告をしない
 
 `ppp authentication pap chap ms-chap ms-chap-v2 callin`　PPP認証方式を選択。とりま PAP, CHAP, MS-CHAP, MS-CHAPv2, 着信認証全て有効。（プロバイダの指定に合わせよう）
 
@@ -224,7 +246,7 @@ interface Dialer1
 
 * `ip route 0.0.0.0 0.0.0.0 Dialer 1`　デフォルトルートを `Dialer 1` に向ける
 
-* `dialer-list 1 protocol ip permit`　ダイアラーリスト1番を定義。IPプロトコルが飛んで来たら Dialer1 インターフェースでPPP認証を開始する（オンデマンドダイアル）
+* `dialer-list 1 protocol ip permit`　ダイアラーリスト1番を定義。IPパケットが飛んで来たら Dialer1 インターフェースでPPP認証を開始する（オンデマンドダイアル）
 
 ## トラシュー
 ### changed state to up, changed state to down が繰り返し出る時
@@ -244,6 +266,8 @@ VDSL信号を検出中・・・
 
 ### 各種確認コマンド
 `show pppoe session`
+
+`show pppoe session all`
 
 `show controllers VDSL 0`
 
