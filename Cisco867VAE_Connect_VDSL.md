@@ -258,12 +258,6 @@ interface Dialer1
 ```
 認証方式の不一致、PPPoEユーザー名、パスワードの誤りのいずれか
 
-### デバッグ
-`debug vdsl 0 daemon interface` で接続の進行状況が見える
-
-* VDSL 0: vdsl line state : discovery
-VDSL信号を検出中・・・
-
 ### 各種確認コマンド
 `show pppoe session`
 
@@ -271,5 +265,44 @@ VDSL信号を検出中・・・
 
 `show controllers VDSL 0`
 
-### Cisco るうたあで telnet 設定を入れても telnet 接続できない時～
-`show run` で line vty に transport input none が入っていないか確認して `transport input telnet` しましょう☆
+### デバッグ
+`debug vdsl 0 daemon interface` で接続の進行状況が見える
+
+* VDSL 0: vdsl line state : discovery
+VDSL信号を検出中・・・
+```
+Feb 12 09:56:08.151: VDSL 0: vdsl line state : discovery
+Feb 12 09:56:08.151: VDSL 0: SM_LINE_TRAIN boolean event
+Feb 12 09:56:08.151:     vdsl_daemon_sm VDSL 0: during state training, got event 17(line_training)
+Feb 12 09:56:08.151: @@@ vdsl_daemon_sm VDSL 0: training -> training
+Cisco867VAE#
+Feb 12 09:56:13.151: VDSL 0: vdsl line state : fullinit
+Cisco867VAE#
+Feb 12 09:56:25.118: VDSL 0: SM_LINE_SHOWTIME boolean event
+Feb 12 09:56:25.118: VDSL 0: line state : showtime !
+Feb 12 09:56:26.118:     vdsl_daemon_sm VDSL 0: during state training, got event 18(showtime)
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: training -> ready
+Feb 12 09:56:26.118: VDSL 0: selected tc = 0, sysif = 1
+Feb 12 09:56:26.118: %CONTROLLER-5-UPDOWN: Controller VDSL 0, changed state to up
+Feb 12 09:56:26.118: VDSL 0: api (sys if get) ret = 0
+Feb 12 09:56:26.118:     vdsl_daemon_sm VDSL 0: during state ready, got event 20(conn_mode_chk)
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: ready -> mode_pending
+Feb 12 09:56:26.118:     vdsl_daemon_sm VDSL 0: idle during state mode_pending
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: mode_pending -> ready
+Feb 12 09:56:26.118: VDSL 0: tc mode selected = 0
+Feb 12 09:56:26.118:     vdsl_daemon_sm VDSL 0: during state ready, got event 22(if_state_chk)
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: ready -> ready
+Feb 12 09:56:26.118
+Cisco867VAE#:     vdsl_daemon_sm VDSL 0: during state ready, got event 21(if_wakeup)
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: ready -> running
+Feb 12 09:56:26.118: VDSL 0: VDSL PTM mode is activated
+Feb 12 09:56:26.118:     vdsl_daemon_sm VDSL 0: during state running, got event 23(linkup)
+Feb 12 09:56:26.118: @@@ vdsl_daemon_sm VDSL 0: running -> running
+Feb 12 09:56:26.118: VDSL 0: api (sys if get) ret = 0
+Cisco867VAE#
+Feb 12 09:56:31.149: %LINK-3-UPDOWN: Interface Ethernet0, changed state to up
+Feb 12 09:56:32.149: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0, changed state to up
+Feb 12 09:57:26.488: %DIALER-6-BIND: Interface Vi1 bound to profile Di1
+Feb 12 09:57:26.492: %LINK-3-UPDOWN: Interface Virtual-Access1, changed state to up
+Feb 12 09:57:26.676: %LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1, changed state to up
+```
