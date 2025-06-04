@@ -47,7 +47,7 @@ zpool import -o readonly=on <pool>
 
 ### ログイン時に ARC キャッシュのサマリーを表示するようにすると、カッコいい！（rootでなくても可）
 ```
-[yuriko☢cisco-ucs 16:52:05 zfs_tool]$ su -
+[yuriko☢cisco-ucs 16:52:05 ~]$ su -
 パスワード:
 最終ログイン: 2025/06/04 (水) 16:49:11 JST日時 pts/1
 
@@ -65,3 +65,7 @@ zpool import -o readonly=on <pool>
 arc_summary -g
 ```
 を書けばおっけい☆
+
+## 百合子さん謹製ZFS便利ツール
+よく使うzfsコマンドワンライナーをシェルスクリプト化した [centos-admin-script/zfs/](https://github.com/IchikawaYukko/centos-admin-script/tree/master/zfs) も絶対見てくれよなっっっっ！
+
