@@ -24,6 +24,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
 * [ゆりこねっと提供サービス一覧☆](YurikoNET.md)
 * [LTO Tips](LTO.md)
+* [ZFS Tips](ZFS.md)
 * [あきばのカード端末ちおさ　CAT Terminals on Akihabara shops](Akiba_shops_CAT_terminals.md)
 
 # Cisco
