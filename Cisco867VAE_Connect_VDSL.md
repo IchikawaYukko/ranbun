@@ -224,6 +224,8 @@ interface Dialer1
 
 `ip nat outside`　NATの外向きインターフェースにする
 
+`ip virtual-reassembly in`　フラグメント化されたパケットを再組み立てする(NATの設定を入れると自動で入るので、気にせず)
+
 `encapsulation ppp`　PPPでカプセル化（他にSLIP, Frame-relay か選べる）
 
 `ip mtu 1454`　要調整 （フレッツ光の場合は1454）
@@ -306,3 +308,139 @@ Feb 12 09:57:26.488: %DIALER-6-BIND: Interface Vi1 bound to profile Di1
 Feb 12 09:57:26.492: %LINK-3-UPDOWN: Interface Virtual-Access1, changed state to up
 Feb 12 09:57:26.676: %LINEPROTO-5-UPDOWN: Line protocol on Interface Virtual-Access1, changed state to up
 ```
+
+### PAPかCHAPかを調べるには
+`debug ppp negotiation` すればOK！ (telnet/ssh なら `terminal monitor` も忘れずに！)
+```
+May 28 22:10:22.333: Vi1 LCP: I CONFREQ [REQsent] id 1 len 19
+May 28 22:10:22.333: Vi1 LCP:    MRU 1454 (0x010405AE)
+May 28 22:10:22.333: Vi1 LCP:    AuthProto CHAP (0x0305C22305)
+May 28 22:10:22.333: Vi1 LCP:    MagicNumber 0x0E11E47F (0x05060E11E47F)
+
+May 28 22:10:22.349: Vi1 PPP: Queue CHAP code[1] id[1]
+May 28 22:10:22.353: Vi1 PPP: Phase is AUTHENTICATING, by the peer
+May 28 22:10:22.353: Vi1 CHAP: Redirect packet to Vi1
+May 28 22:10:22.353: Vi1 CHAP: I CHALLENGE id 1 len 24 from "BAS"
+May 28 22:10:22.353: Vi1 LCP: State is Open
+May 28 22:10:22.353: Vi1 CHAP: Using hostname from interface CHAP
+May 28 22:10:22.353: Vi1 CHAP: Using password from interface CHAP
+May 28 22:10:22.353: Vi1 CHAP: O RESPONSE id 1 len 49 from "👩🏻‍✈️@ma05.bbisp.net"
+May 28 22:10:22.549: Vi1 CHAP: I SUCCESS id 1 len 4
+```
+
+`AuthProto CHAP (0x0305C22305)` でCHAPを使っているとわかる
+
+*参考: [VDSL のトラブルシューティング](https://www.cisco.com/c/ja_jp/support/docs/long-reach-ethernet-lre-digital-subscriber-line-xdsl/lre-vdsl-long-reach-ethernet-very-high-data-rate-dsl/119009-technote-vdsl-00.html)
+
+## VDSL 接続状況を見る
+たのしぃたのしぃ `show controller VDSL 0` タイム～～！（ぉ
+
+NTT製VDSLモデムには真似できない芸当っっっ VDSL接続パラメータとか、ネゴシエーション結果、トレーニング結果が見れるっっっ！
+
+### ﾕﾘｺ🏡ﾊｳｽ✨ の show controller VDSL 0 例
+```
+Cisco867VAE#sh controllers VDSL 0
+Controller VDSL 0 is UP
+
+Daemon Status:           Up
+
+                        XTU-R (DS)              XTU-C (US)
+Chip Vendor ID:         'BDCM'                   'IKNS'
+Chip Vendor Specific:   0x0000                   0x0001
+Chip Vendor Country:    0xB500                   0xB500
+Modem Vendor ID:        'CSCO'                   '    '
+Modem Vendor Specific:  0x4602                   0x0000
+Modem Vendor Country:   0xB500                   0x0000
+Serial Number Near:    GMK2230008V C867VAE 15.6(3)M
+Serial Number Far:
+Modem Version Near:    15.6(3)M
+Modem Version Far:     0x0001
+
+Modem Status:            TC Sync (Showtime!)
+
+DSL Config Mode:         VDSL2
+Trained Mode:   G.993.2 (VDSL2) Profile 17a
+TC Mode:                 PTM
+Selftest Result:         0x00
+DELT configuration:      disabled
+DELT state:              not running
+
+Full inits:             17
+Failed full inits:      0
+Short inits:            0
+Failed short inits:     1
+
+Firmware        Source          File Name
+--------        ------          ----------
+VDSL            embedded        N/A
+
+Modem FW  Version:      4.12L.08
+Modem PHY Version:      A2pv6F039t.d24m
+Trellis:                 ON                       ON
+SRA:                     disabled                disabled
+ SRA count:              0                       0
+Bit swap:                enabled                 enabled
+ Bit swap count:         108                     859
+Line Attenuation:         3.3 dB                  0.0 dB
+Signal Attenuation:       0.0 dB                  0.0 dB
+Noise Margin:            12.6 dB                  5.5 dB
+Attainable Rate:        136801 kbits/s           47608 kbits/s
+Actual Power:            10.3 dBm                - 8.5 dBm
+Per Band Status:        D1      D2      D3      U0      U1      U2      U3
+Line Attenuation(dB):   1.3     3.4     4.7     N/A     1.6     3.2     N/A
+Signal Attenuation(dB): 1.3     3.5     4.7     N/A     1.4     3.1     N/A
+Noise Margin(dB):       13.0    12.5    12.5    N/A     5.4     5.5     N/A
+Total FECC:             2200541                  405028726
+Total ES:               509                      8801
+Total SES:              174                      230
+Total LOSS:             13                       0
+Total UAS:              990                      1022
+Total LPRS:             0                        0
+Total LOFS:             90                       0
+Total LOLS:             0                        0
+
+
+                  DS Channel1     DS Channel0   US Channel1       US Channel0
+Speed (kbps):             0           103998             0             48095
+SRA Previous Speed:       0                0             0                 0
+Previous Speed:           0           103998             0             48065
+Reed-Solomon EC:          0            27910             0          37544718
+CRC Errors:               0           147137             0             85852
+Header Errors:            0             5301             0                 0
+Interleave (ms):       0.00             1.00          0.00              1.00
+Actual INP:            0.00             0.00          0.00              0.00
+
+Training Log :  Stopped
+Training Log Filename : flash:vdsllog.bin
+```
+### Trained Mode
+```
+Trained Mode:   G.993.2 (VDSL2) Profile 17a
+```
+
+VDSL動作モード。この例では VDSL2のプロファイル17a(17.664MHz帯域、下り150Mbps/上り50Mbps)で動作している。
+
+プロファイルの一覧は[VDSL - Wikipedia](https://en.wikipedia.org/wiki/VDSL)を参照っ
+### TC
+
+👩🏻‍✈️ほ～ん！ TCってのはTransmission Coverage（伝送カバレッジ）で、TC: PTMってのは伝送カバレッジがPacket Transfer Mode(パケット転送モード）になっていることを示しているのか～ へ～へ～（ぉ
+
+### Vendor ID
+Chip Vendor ID:  
+Modem Vendor ID  
+の略号は以下を参照っ
+
+|Code|Vendor   |
+|----|---------|
+|ALCB|Alcatel  |
+|ANDV|Analog Devices|
+|BDCM|Broadcom |
+|GSPN|Globespan|
+|IKNS|Ikanos   |
+|IFTN|Infineon |
+|META|Metanoia |
+|STMI|STMicroelectronics|
+|TSTS|Texas Instruments|
+|CSCO|Cisco    |
+
+ソース： https://forum.kitz.co.uk/index.php?topic=14005.0
