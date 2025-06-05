@@ -26,6 +26,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [LTO Tips](LTO.md)
 * [ZFS Tips](ZFS.md)
 * [あきばのカード端末ちおさ　CAT Terminals on Akihabara shops](Akiba_shops_CAT_terminals.md)
+* [PSTNテスト用番号 / Testing number for PSTN](TelephoneServices.md)
 
 # Cisco
 * [Cisco 867VAE るうたあで VDSL2 接続っっっっ](Cisco867VAE_Connect_VDSL.md)
