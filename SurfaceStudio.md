@@ -88,5 +88,7 @@ SATA HDDをSATA SSDに交換してからNVMeキャッシュを切り離すと、
 
 SATA, NVMe にそれぞれ同容量SSDを詰んでRAID 1化しても良いし、RAIDを組まずに内蔵ストレージ2台構成としても便利っ。
 
+なぉ、RAID 0 キャッシュを解除すれば、SATA側、NVMe側どちらからもブートできるよぉになるので、高速なNVMe側にWindowsをクローンして、システムディスクとしてしまうのもオススメ☆（百合子さんは、そーしました☆）
+
 英語が読める人は[Surface Studio 1: How to disconnect the Rapid Hybrid Drive and install Windows 10 on full SSD](https://medium.com/@stephan.romhart/surface-studio-1-how-to-disconnect-the-rapid-hybrid-drive-and-install-windows-10-on-full-ssd-743a6375fab1)を参照
 
