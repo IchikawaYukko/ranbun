@@ -69,3 +69,29 @@ arc_summary -g
 ## 百合子さん謹製ZFS便利ツール
 よく使うzfsコマンドワンライナーをシェルスクリプト化した [centos-admin-script/zfs/](https://github.com/IchikawaYukko/centos-admin-script/tree/master/zfs) も絶対見てくれよなっっっっ！
 
+# SELinux RBAC 環境で zpool/zfsコマンドを使う
+普通に su - しただけでは root 取っても実行できず
+```
+[root@cisco-ucs ~]# zpool list
+Permission denied the ZFS utilities must be run as root.
+```
+と怒られてしまうので以下のように `sudo -r unconfined_r -t unconfined_t` 付けて実行すればおっけいっっっっっ!!! (SELinuxガチ勢→👩🏻‍💻🎶)
+```
+[yuriko☢cisco-ucs 22:53:29 ~]$ sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      31
+
+[yuriko☢cisco-ucs 22:53:45 ~]$ sudo -r unconfined_r -t unconfined_t zpool list
+NAME   SIZE  ALLOC   FREE  CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP    HEALTH  ALTROOT
+dvd   3.81T  3.04T   793G        -         -     4%    79%  1.00x    ONLINE  -
+tank  3.32T  2.31T  1.02T        -         -    15%    69%  1.00x    ONLINE  -
+
+[yuriko☢cisco-ucs 22:53:47 ~]$ sudo -r unconfined_r -t unconfined_t id
+uid=0(root) gid=0(root) groups=0(root) context=staff_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+```
