@@ -13,7 +13,6 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [ピンアウト　Pinouts](pinouts.md)
 * [ケーブル＆ハーネス　Cables and Harness](cables.md)
 * [2進接頭辞 or 10進接頭辞？？？](binary_prefix.md)
-* [オススメ自宅用ラックサーバマシン](recomanded_homeservers.md)
 * [和文タイプライター Kanji Typewriter](japanese_kanji_typewriter.md)
 * [沸騰水型原子炉シミュレーター　日本語プレイマニュアル](bwr_introduction.md)
 * [初代さーひすスタジオ Tips](SurfaceStudio.md)
@@ -21,12 +20,16 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [IPv6 Tips](IPv6.md)
 * [税制改正にともなう株式電卓 CASIO KB-100 の対応](CASIO_KB-100.md)
 * [電子工作Tips](Hobby_electronics_tips.md)
-* [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
 * [ゆりこねっと提供サービス一覧☆](YurikoNET.md)
-* [LTO Tips](LTO.md)
-* [ZFS Tips](ZFS.md)
 * [あきばのカード端末ちおさ　CAT Terminals on Akihabara shops](Akiba_shops_CAT_terminals.md)
 * [PSTNテスト用番号 / Testing number for PSTN](TelephoneServices.md)
+
+# Linux
+* [LTO Tips](LTO.md)
+* [ZFS Tips](ZFS.md)
+* [RHEL Tips](RHEL.md)
+* [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
+* [オススメ自宅用ラックサーバマシン](recomanded_homeservers.md)
 
 # Cisco
 * [Cisco 867VAE るうたあで VDSL2 接続っっっっ](Cisco867VAE_Connect_VDSL.md)
