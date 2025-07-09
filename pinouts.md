@@ -50,6 +50,22 @@ It can be booted on only +5V
 
 AC Adaptor: ADP-29DB (29W)
 
+### Cisco 891F Power connector
+Molex 5558 Connector
+```
+   KEY
+-54V  +12V
+GND   FG
+
+G: GND
+FG: Frame Ground（ぉ
+※FG: GNDとは導通のない+12V系統の接地。その名の通り筐体金属と導通がある
+```
+#### ACアダプタ型番
+* `PWR-MF4-125W-AC=`
+* `341-0502-01`
+* `PA-2121-1-LF`
+
 ### IP Phone Handset
 ```
 RJ-9 Plug
