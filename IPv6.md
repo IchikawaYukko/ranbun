@@ -44,6 +44,27 @@ WAN/LAN境界ルータでは、グローバルユニキャストアドレス以�
 # LinuxのNetworkManagerでRFC4941なアドレスを使わず、一意に決まるSLAACなアドレスを使う
 そのままDHCPなどでIPv6アドレスを自動取得すると IPv6 Privacy Extension (RFC4941) な動的アドレスを掴んでしまうので
 
-`nmcli c modify <IF_NAME> ipv6.addr-gen-mode eui64`
+## 方法1: 直接編集
+`etc/sysconfig/network-scripts/ifcfg-enp2s0f0` などに
+
+```
+IPV6_PRIVACY=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+```
+
+と書いて、インターフェースを down / up すればおっけい☆
+
+## 方法2: nmcli
+```
+[yuriko@compaq-pro6300 ~]$ sudo nmcli c modify <IF_NAME> ipv6.addr-gen-mode eui64
+
+[yuriko@compaq-pro6300 ~]$ sudo nmcli c down <IF_NAME>
+接続 '<IF_NAME>' が正常に非アクティブ化されました (D-Bus アクティブパス: /org/freedesktop/NetworkManager/ActiveConnection/14)
+
+[yuriko@compaq-pro6300 ~]$ sudo nmcli c up <IF_NAME>
+接続が正常にアクティベートされました (D-Bus アクティブパス: /org/freedesktop/NetworkManager/ActiveConnection/15)
+```
 
 コマンドを叩けばおｋ（再起動後も有効）
+
+modify で設定変更した後 down/up してIPアドレスを取り直す
