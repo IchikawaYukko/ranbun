@@ -1,3 +1,6 @@
+百合子設計局  
+報告書番号 011
+
 # ピンアウト Pinouts
 各種機器のピン配列情報
 
@@ -100,6 +103,21 @@ RJ-11 Plug
 5-- BAT+ 3.7V
 
 GND - R1: 10k
+```
+
+### UC Phone 7921G Charging Cradle
+```
+left L₁ L₂ K 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 K R₁R₂ right
+K = Key
+
+1 GND
+9 USB V+
+10 ???
+11 USB D+
+12 USB D-
+13 GND
+14 ???
+15 +5V from AC Adaptor
 ```
 
 ### TelePresence EX90 Power
