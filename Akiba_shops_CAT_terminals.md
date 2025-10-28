@@ -1,3 +1,6 @@
+百合子設計局  
+報告書番号 017
+
 # CAT Terminals on Akihabara shops
 
 | Shop | Card Networks | Acquirer | Terminal | Survey Date |
@@ -9,6 +12,7 @@
 |すし屋銀蔵 秋葉原店 Ginzo|V|Cardnet|TEC|2025/02|
 |品川心療内科|V|GMO Financial Gate|sPayed Terminal?|2025/02|
 |スギ薬局 岩本町店|VM||CASTLES VEGA3000?|2025/04|
+|磯丸水産 秋葉原店|V|GMO Financial Gate|Stera Terminal|2025/07|
 
 # No Cards Accepted Shop
 * AkihaJunks
