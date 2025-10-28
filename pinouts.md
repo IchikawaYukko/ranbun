@@ -323,3 +323,45 @@ LED に5V, 12Vを直接繋がないこと。要電流制限ダイオード。
 5557プラグのノッチは要カット。（カットしないと入らない）
 You must cut locking notch on 5557 plug to insert.
 ```
+
+## PCIe CARD ##
+### HP P/N 640269-001 3 Port +12V Powered USB ###
++5V from J3 Connector, +12V from PCIe slot.
+
+F1 to F3 is fuse for +12V
+
+C2 C9 C12 is 470uF/16V for 12V Vcc-GND
+
+C1003 C1004 is 470uF/6.3V for 5V Vcc-GND
+
+R282 = 1kΩ?
+```
+J3 PINOUT
+
+  KEY
+ 5G678V
+12GG34V
+
+1 CN3 DP
+2 CN3 DM
+G GND
+G GND
+3 CN1 DP
+4 CN1 DM
+V Vcc +5V
+
+5 1kΩ to GND??? via R282??? 5V OUT???
+G GND
+6 CN2 DP
+7 CN2 DM
+8 5V OUT???
+V Vcc +5V
+```
+
+## PSTN
+### FXS
+```
+   凸
+  + - 　←ノーマル極性時
+ L1 L2
+```
