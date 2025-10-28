@@ -1,3 +1,6 @@
+百合子設計局  
+報告書番号 016
+
 # RHEL tips
 
 ## CentOS 7 Grub でシリアルコンソールを有効にする
@@ -7,8 +10,20 @@
 GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8"
 GRUB_TERMINAL=serial
 ```
-その後 `grub2-mkconfig` を叩く
 
+Fedora 42の場合
+```
+GRUB_TERMINAL_OUTPUT="console serial"
+GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8"
+GRUB_SERIAL_COMMAND="serial --unit=0 --speed=115200"
+```
+その後 `grub2-mkconfig` を叩く
+```
+root@compaq-pro6300:~# grub2-mkconfig -o /boot/grub2/grub.cfg
+Generating grub configuration file ...
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+```
 
 ## CentOS 7 に MinEd を入れる
 CJKV対応IME内蔵テキストエディタの[MinEd](https://mined.github.io/)をepelでCentOS 7に入れようとすると「ねーよ💢」と怒られます・・・（ぉ
