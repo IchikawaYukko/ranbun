@@ -95,3 +95,13 @@ tank  3.32T  2.31T  1.02T        -         -    15%    69%  1.00x    ONLINE  -
 [yuriko☢cisco-ucs 22:53:47 ~]$ sudo -r unconfined_r -t unconfined_t id
 uid=0(root) gid=0(root) groups=0(root) context=staff_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 ```
+## 別解
+`newrole -r unconfined_r` でも可
+```
+[yuriko☢cisco-ucs 07:08:42 ~]$newrole -r unconfined_r
+パスワード:
+[yuriko☢cisco-ucs 07:08:56 ~]$ zpool list
+NAME   SIZE  ALLOC   FREE  CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP    HEALTH  ALTROOT
+dvd   3.81T  3.10T   733G        -         -    16%    81%  1.00x    ONLINE  -
+tank  3.32T  2.31T  1.02T        -         -    15%    69%  1.00x    ONLINE  -
+```
