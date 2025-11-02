@@ -80,6 +80,16 @@
 
 [参考ツイート](https://x.com/IchikawaYukko/status/1925474905891737668)
 
+# 内蔵NVMe SSDはCentOSで認識できない
+Intel Rapid Storage Technology でSSDとHDDを分離してもLinuxで見えるのはSATA HDD側のみなので、ちうい！`dd`でSSDのクローンなどをするには、別マシンへの差し替えが必要。
+
+# NVMe SSDにヒートシンクは装着不可
+本体の隙間がわずかしかないため、市販のNVMe SSD用*ﾋｰﾖﾁﾝｸ*は装着不可。3mm厚の物ですら厚くて入らなかったし、これ以上薄いと*ﾋｰﾖﾁﾝｸ*としての役目を果たせなくなるので、装着不可と見てよいだろう。
+
+ただし、WD BLACK SN850X (2TB) を装着して使った感じでは、いちおお*ﾋｰﾖﾁﾝｸ*なしで260MB/s(2080Gbps)出ているので、付けなくても問題ないだろう。
+
+2TB SATA HDD + 2TB NVMe SSD の構成にして、っょっょマシンを作ると快適でいいぞっっっ！
+
 # UEFI
 UEFI(BIOS) 画面には
 
