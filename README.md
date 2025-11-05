@@ -30,7 +30,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [RHEL Tips](RHEL.md)
 * [Nginx で暗号スイート CHACHA20-POLY1305 を第一優先にする](Nginx_Chacha20-Poly1305.md)
 * [オススメ自宅用ラックサーバマシン](recomanded_homeservers.md)
-* [無料ツールだけでできる！GPTディスクの拡大縮小コピー法](CloningGPTdisk.md)
+* [無料ツールだけでできる！GPTディスクの拡大縮小コピー法](articles/CloningGPTdisk.md)
 
 # Cisco
 * [Cisco 867VAE るうたあで VDSL2 接続っっっっ](Cisco867VAE_Connect_VDSL.md)
