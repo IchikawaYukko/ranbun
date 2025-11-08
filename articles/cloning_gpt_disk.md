@@ -73,3 +73,5 @@ MBRディスクは`dd`で単純コピーしただけでもブートできるけ�
 ## 別解
 
 使ったことないので解説できないけど、[CloneZilla](https://clonezilla.org/)とかいう良さげなツールがあるっぽい☆
+
+ぢつは gdisk コマンドは[Windows版](https://sourceforge.net/projects/gptfdisk/)もあるっ（32/64bit） 管理者権限のコマンドプロンプトで実行しよう。引数のドライブ指定は `0:` `1:` など番号でどうぞ。
