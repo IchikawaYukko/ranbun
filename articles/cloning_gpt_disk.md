@@ -3,7 +3,7 @@ title: "無料ツールだけでできる！GPTディスクの拡大縮小コピ
 type: "tech"
 emoji: "👩🏻‍💻"
 date: "2025-11-03"
-tags: ["dd", "CentOS", "SSD", "UEFI", "parted", "gdisk", "fdisk"]
+tags: ["dd", "CentOS", "SSD", "UEFI", "parted", "gdisk", "fdisk", "NTFS"]
 author: "IchikawaYukko"
 published: true
 ---
