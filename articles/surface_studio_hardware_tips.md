@@ -1,4 +1,12 @@
-
+---
+title: "初代さーひすスタジオ・ハードウェア Tips"
+type: "tech"
+emoji: "🖥"
+date: "2025-11-14"
+tags: ["Surface", "SurfaceStudio", "分解", "IntelRST"]
+author: "IchikawaYukko"
+published: true
+---
 百合子設計局  
 報告書番号 019
 
