@@ -24,7 +24,7 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [ゆりこねっと提供サービス一覧☆](YurikoNET.md)
 * [あきばのカード端末ちおさ　CAT Terminals on Akihabara shops](Akiba_shops_CAT_terminals.md)
 * [PSTNテスト用番号 / Testing number for PSTN](TelephoneServices.md)
-* [ConoHa のオブジェクトストレージを boto3 で操作する](articles/ConoHa_S3_boto3_access.md)
+* [ConoHa のオブジェクトストレージを boto3 で操作する](articles/conoha_s3_boto3_access.md)
 
 # Linux
 * [LTO Tips](LTO.md)
