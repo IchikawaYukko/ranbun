@@ -1,3 +1,12 @@
+---
+title: "ConoHa のオブジェクトストレージを boto3 で操作する"
+type: "tech"
+emoji: "🗑"
+date: "2025-12-09"
+tags: ["boto3", "ConoHa", "Python", "Lambda", "S3"]
+author: "IchikawaYukko"
+published: true
+---
 百合子設計局  
 報告書番号 020
 
