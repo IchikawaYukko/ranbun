@@ -1,3 +1,12 @@
+---
+title: "ConoHa DNS (v2.0)のレコードエクスポート方法"
+type: "tech"
+emoji: "🌏"
+date: "2025-12-22"
+tags: ["jq", "ConoHa", "DNS", "migration", "restapi"]
+author: "IchikawaYukko"
+published: true
+---
 百合子設計局  
 報告書番号 021
 
