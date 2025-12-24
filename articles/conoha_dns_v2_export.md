@@ -1,5 +1,5 @@
 ---
-title: "ConoHa DNS (v2.0)のレコードエクスポート方法"
+title: "ConoHa DNS (v2.0)のレコードエクスポート方法・DNS 3.0 への移行方法"
 type: "tech"
 emoji: "🌏"
 date: "2025-12-22"
