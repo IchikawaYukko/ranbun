@@ -24,7 +24,10 @@ Sorry for Japanese & English mixed writtings, poor writings, typos etc...
 * [ゆりこねっと提供サービス一覧☆](YurikoNET.md)
 * [あきばのカード端末ちおさ　CAT Terminals on Akihabara shops](Akiba_shops_CAT_terminals.md)
 * [PSTNテスト用番号 / Testing number for PSTN](TelephoneServices.md)
-* [ConoHa のオブジェクトストレージを boto3 で操作する](articles/conoha_s3_boto3_access.md)
+
+# ConoHa
+* [ConoHa 3.0 のオブジェクトストレージを boto3 で操作する](articles/conoha_s3_boto3_access.md)
+* [ConoHa 3.0 のオブジェクトストレージを python-swiftclient で操作する](articles/conoha_s3_python_swiftclient.md)
 * [ConoHa DNS (v2.0)のレコードエクスポート方法](articles/conoha_dns_v2_export.md)
 
 # Linux
