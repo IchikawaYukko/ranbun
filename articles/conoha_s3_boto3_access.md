@@ -3,7 +3,7 @@ title: "ConoHa のオブジェクトストレージを boto3 で操作する"
 type: "tech"
 emoji: "🗑"
 date: "2025-12-09"
-tags: ["boto3", "ConoHa", "Python", "Lambda", "S3"]
+tags: ["boto3", "ConoHa", "Python", "objectstorage", "S3"]
 author: "IchikawaYukko"
 published: true
 ---
