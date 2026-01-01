@@ -1,5 +1,5 @@
 ---
-title: "ConoHa のオブジェクトストレージを boto3 で操作する"
+title: "ConoHa 3.0のオブジェクトストレージを boto3 で操作する"
 type: "tech"
 emoji: "🗑"
 date: "2025-12-09"
