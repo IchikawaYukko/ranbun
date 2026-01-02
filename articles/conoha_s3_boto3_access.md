@@ -51,3 +51,15 @@ Response:
   "body": "[{'Name': 'test', 'CreationDate': datetime.datetime(2025, 12, 9, 13, 38, 37, 654000, tzinfo=tzlocal())}]"
 }
 ```
+
+# AWS Lambda から ConoHa オブジェクトストレージに書き込んでみる
+これでOK
+```
+import hashlib
+
+body = 'Hello World!'
+bucket_name = 'test'
+hash_sha256 = hashlib.sha256(body.encode())
+s3.put_object(Bucket=bucket_name, Key='test.txt', Body=body, ChecksumSHA256=hash_sha256.hexdigest())
+```
+`ChecksumSHA256`がないと怒られるので、ちうい！
