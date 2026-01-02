@@ -2,7 +2,9 @@
 報告書番号 022
 
 # ConoHa 3.0 のオブジェクトストレージを python-swiftclient で操作する
-`swift`コマンド(python-swiftclient)で長年ConoHa 2.0のオブジェクトストレージを叩いていたので、3.0も`swift`で叩きたかったけど、叩き方がどこにも書かれていない・・・ しかもConoHa 2.0と同じ設定にしても叩けなかったけど、ムカ💢ついて調べまくったらイケたので、ここに書き残しておくこととするっっっ
+あけましておめでとおございます☆ 今年も百合子設計局をよろしくお願いします（ぉ
+
+`swift`コマンド(python-swiftclient)で長年ConoHa 2.0のオブジェクトストレージを叩いていたので、3.0も`swift`で叩きたかったけど、叩き方がどこにも書かれていない・・・ しかもConoHa 2.0と同じ設定にしても叩けなかった。けど、ムカ💢ついて新年早々調べまくったらイケたので、ここに書き残しておくこととするっっっ
 
 [ConoHaの公式ドキュメント](https://doc.conoha.jp/reference/api-vps3/api-objectstorage-vps3/object-get_objects_list-v3/)には
 > ConoHaにて提供しておりますAPIにつきましては、クラウド基盤として採用しておりますOpenStackの機能にて実装しておりますので、詳細な情報や使い方はOpenStackのドキュメントにてご確認ください。
